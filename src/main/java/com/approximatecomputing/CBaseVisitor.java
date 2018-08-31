@@ -400,11 +400,6 @@ public class CBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements CVis
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitIterationstatement(CParser.IterationstatementContext ctx) {
-		System.out.println(ctx.getText());
-		System.out.println(ctx.forinitstatement().getText());
-		System.out.println(ctx.condition().getText());
-		System.out.println(ctx.expression().getText());
-		System.out.println(ctx.statement().getText());
 		return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
